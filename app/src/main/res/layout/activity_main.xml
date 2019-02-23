@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <fragment
+        android:id="@+id/fragBlue"
+        android:name="com.example.consultants.fragments.fragments.BlueFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onAddingYellow"
+        android:id="@+id/btnAddYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Yellow Fragment" />
+
+    <Button
+        android:onClick="onRemovingYellow"
+        android:id="@+id/btnRemoveYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Yellow Fragment" />
+
+    <FrameLayout
+        android:id="@+id/fragmentHolder1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onAddingRed"
+        android:id="@+id/btnAddRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Red Fragment" />
+
+    <Button
+        android:onClick="onRemovingRed"
+        android:id="@+id/btnRemoveRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Red Fragment" />
+
+    <Button
+        android:text="Remove"
+        android:onClick="onRemovingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/fragmentHolder2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
